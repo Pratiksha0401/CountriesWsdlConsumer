@@ -13,10 +13,10 @@ public class CountryClient extends WebServiceGatewaySupport {
 	private static final Logger log = LoggerFactory.getLogger(CountryClient.class);
 
 	public GetCountryResponse getCountry(String country) {
-		System.out.println(country);
+		//System.out.println(country);
 		GetCountryRequest request = new GetCountryRequest();
 		request.setName(country);
-		System.out.println("request="+request.getName());
+		//System.out.println("request="+request.getName());
 
 		log.info("Requesting location for " + country);
 
